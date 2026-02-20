@@ -42,7 +42,8 @@
               >Mobile Number</label
             >
             <input
-              type="text"
+              id="user-number"
+              type="tel"
               maxlength="11"
               minlength="11"
               class="input rounded-full"
@@ -50,16 +51,19 @@
             />
             <label class="label font-semibold text-neutral">4-Digit PIN</label>
             <input
+              id="user-pin"
               type="password"
-              maxlength="11"
-              minlength="11"
+              maxlength="4"
+              minlength="4"
               class="input rounded-full"
               placeholder="Enter 4-Digit PIN"
             />
             <div>
               <a class="link link-hover text-neutral-700">Forgot PIN?</a>
             </div>
-            <button class="btn btn-primary mt-4 rounded-full">Login</button>
+            <button id="login-btn" class="btn btn-primary mt-4 rounded-full">
+              Login
+            </button>
           </fieldset>
         </div>
       </div>
